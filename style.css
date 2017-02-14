@@ -62,10 +62,14 @@ a:hover {
 }
 
 /*Styling the name of the blog*/
+.site-header {
+  width: 100vw;
+}
 
 .site-header-main {
   display: flex;
   justify-content: space-between;
+  /*align-items: baseline;*/
 }
 
 .site-branding {
@@ -91,7 +95,7 @@ a:hover {
 
 .menu-carochin-top-menu-container .primary-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
-  background-color: red;
+  width: 20vw;
 }

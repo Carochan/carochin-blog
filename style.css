@@ -12,7 +12,22 @@
  Text Domain:  Carochan
 */
 
+@import url("normalise.v5.mini.css");
 
+html {
+  font-size: 1em;
+}
+@media (min-width: 25em) { /* 400px */
+  html {
+    font-size: calc(1rem + (1.6 - 1) * (100vw - 25em) / (100 - 25));
+  }
+}
+@media (min-width: 100em) { /* 1600px */
+  html {
+    font-size: 1.6rem;
+  }
+
+}
 
 body {
   /*background-image: url("images/pattern.png");*/
@@ -67,7 +82,7 @@ a:hover {
 } 
 
 .site-branding .site-title a {
-  font-size: 7em;
+  font-size: 5em;
   color: transparent;
 }
 

@@ -1,0 +1,82 @@
+/*
+ Theme Name:   Carochin
+ Theme URI:    http://www.carochin.com
+ Description:  Carochin kawaii
+ Author:       Caro chan
+ Author URI:   http://www.carochin.com
+ Template:     twentysixteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  Carochan
+*/
+
+
+
+body {
+  /*background-image: url("images/pattern.png");*/
+  /*background-repeat: no-repeat;*/
+
+}
+a:link {
+  text-decoration: none;
+  color: #420052;
+}
+a:visited {
+  color: #9AA9D9;
+}
+a:hover {
+  color: #8C004C;
+}
+
+.site-inner {
+  width: 100%;
+  max-width: 86em;
+  margin: auto;
+  color: #420052;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Remove the skip link and menu toggle*/
+
+.skip-link,
+.menu-toggle {
+  display: none;
+}
+
+/*Styling the name of the blog*/
+
+.site-header-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-branding {
+   background-image: linear-gradient(100deg,
+    purple, 
+    pink 30%, 
+    #420052 60%);
+  -webkit-background-clip: text;
+}
+.site-branding .site-title,
+.site-branding .site-description {
+  text-align: right;
+  color: transparent;
+} 
+
+.site-branding .site-title a {
+  font-size: 7em;
+  color: transparent;
+}
+
+/*Styling the nav top menu*/
+
+
+.menu-carochin-top-menu-container .primary-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: red;
+}

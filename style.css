@@ -57,7 +57,8 @@ a:hover {
 /*Remove the skip link and menu toggle*/
 
 .skip-link,
-.menu-toggle {
+.menu-toggle,
+.entry-footer {
   display: none;
 }
 
@@ -84,9 +85,12 @@ a:hover {
   text-align: right;
   color: transparent;
 } 
-
+.site-branding h1{
+  font-size: 0rem;
+  font-weight: normal;
+}
 .site-branding .site-title a {
-  font-size: 5em;
+  font-size: 5rem;
   color: transparent;
 }
 
@@ -99,3 +103,55 @@ a:hover {
   list-style: none;
   width: 20vw;
 }
+
+/*Styling main */
+.site-content {
+  margin: auto;
+  width: 100%;
+}
+
+.content-area {
+  display: flex;
+  justify-content: space-around;
+  /*background-color: red;*/
+}
+article {
+  width: 30rem;
+}
+.widget-area section {
+  text-align: center;
+  margin: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  
+}
+.content-bottom-widgets {
+  width: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px double pink;
+  background-color: #F5E1ED;
+}
+.sidebar {
+  /*display: flex;
+  flex-direction: column;*/
+}
+.sidebar section {
+  width: 100%;
+  /*background-color: pink;*/
+  margin: auto;
+}
+
+#text-4 .textwidget {
+  width: 15rem;
+  margin: auto;
+  
+}
+#text-4 .clear {
+  margin: auto;
+  text-align: center;
+}
+

@@ -144,6 +144,8 @@ article {
   /*background-color: pink;*/
   margin: auto;
   border: 2px double pink;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #text-4 .textwidget {
@@ -164,5 +166,9 @@ article {
 }
 .sidebar #text-8 {
   border: none;
+}
+
+.site-footer .menu-carochin-top-menu-container {
+  display: none;
 }
 

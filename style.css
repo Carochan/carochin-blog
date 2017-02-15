@@ -143,6 +143,7 @@ article {
   width: 100%;
   /*background-color: pink;*/
   margin: auto;
+  border: 2px double pink;
 }
 
 #text-4 .textwidget {
@@ -153,5 +154,15 @@ article {
 #text-4 .clear {
   margin: auto;
   text-align: center;
+}
+
+#text-8 .textwidget {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.sidebar #text-8 {
+  border: none;
 }
 

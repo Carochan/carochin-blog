@@ -17,13 +17,16 @@
 html {
   font-size: 1em;
 }
+body {
+  font-size: 1rem;
+}
 @media (min-width: 25em) { /* 400px */
-  html {
-    font-size: calc(1rem + (1.6 - 1) * (100vw - 25em) / (100 - 25));
+  body {
+    font-size: calc(1rem + (1.6 - 1) * (100vw - 25rem) / (100 - 25));
   }
 }
 @media (min-width: 100em) { /* 1600px */
-  html {
+  body {
     font-size: 1.6rem;
   }
 
@@ -33,7 +36,7 @@ h1 {
 }
 @media (min-width: 25em) { /* 400px */
   h1 {
-    font-size: calc(1.3rem + (3 - 1.3) * (100vw - 25em) / (100 - 25));
+    font-size: calc(1.3rem + (3 - 1.3) * (100vw - 25rem) / (100 - 25));
 
   }
 }
@@ -48,7 +51,7 @@ h2 {
 }
 @media (min-width: 25em) { /* 400px */
   h2 {
-    font-size: calc(1.2rem + (2 - 1.2) * (100vw - 25em) / (100 - 25));
+    font-size: calc(1.2rem + (2 - 1.2) * (100vw - 25rem) / (100 - 25));
 
   }
 }
@@ -145,34 +148,42 @@ a:hover {
   /*background-color: red;*/
 }
 article {
-  width: 30rem;
+  width: 40rem;
+  background: white;
+  padding: 2rem 8rem;
 }
+.entry-content {
+
+}
+
+/*Styling aside*/
+
 .widget-area section {
   text-align: center;
   margin: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0 1rem;
+
 
   
 }
 .content-bottom-widgets {
-  width: 13rem;
+  width: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 2px double pink;
-  background-color: #F5E1ED;
+  border: 2px double #BFBFBF;
+  background-color: white;
 }
 .sidebar {
   /*display: flex;
   flex-direction: column;*/
 }
 .sidebar section {
-  width: 100%;
-  /*background-color: pink;*/
+  width: 80%;
+  background-color: white;
   margin: auto;
-  border: 2px double pink;
+  border: 2px double #BFBFBF;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }

@@ -99,6 +99,13 @@ a:hover {
 .site-header {
   width: 100vw;
   max-width: 100rem;
+  border-top: 1rem solid #D3F1E5;
+  padding-right: 0;
+}
+@media (min-width: 40em) { /*For the menu in responsive*/
+    .site-header {
+      padding-right: 2rem;
+    }
 }
 
 .site-header-main {
@@ -194,7 +201,8 @@ a:hover {
 .site-header-menu {
   display: flex;
   align-items: flex-start;
-  background-color: pink;
+  align-self: flex-start;
+  /*background-color: pink;*/
 }
 
 .menu-carochin-top-menu-container .primary-menu {
@@ -206,20 +214,28 @@ a:hover {
   margin: 0;
   padding: 1rem 0.5rem;
   width: 20vw;
+  border-bottom-left-radius: 30% 50%;
+  box-shadow: 3px 3px 4px 0px #9EA29B;
+}
+.menu-carochin-top-menu-container .primary-menu li:first-child {
+  margin: 0;
+  margin-bottom: 1rem;
 }
 @media (min-width: 40em) {
   .menu-carochin-top-menu-container .primary-menu {
   flex-direction: row;
   justify-content: space-around;
+  border-bottom-left-radius: 10% 50%;
+  border-bottom-right-radius: 10% 50%;
   align-items: baseline;
   width: 25vw;
   padding: 1rem 1rem;
   margin: 0;
+  box-shadow: 0px 2px 2px 0px #9EA29B;
   }
   .menu-carochin-top-menu-container .primary-menu li:first-child {
     margin-bottom: 0;
     margin-right: 1rem;
-    padding-bottom: 0;
   }
 }
 @media(min-width: 25em) {
@@ -237,17 +253,14 @@ a:hover {
     padding: 0;
 
 }
-.menu-carochin-top-menu-container .primary-menu li:first-child {
-  margin: 0;
-  padding-bottom: 1rem;
-  /*margin-bottom: 1rem;*/
-}
+
 /*.menu-carochin-top-menu-container .primary-menu li:last-child {
   margin-bottom: 0;
   margin-right: 0;
 }*/
 
 /*Styling main */
+
 .site-content {
   margin: auto;
   width: 100%;

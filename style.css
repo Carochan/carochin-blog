@@ -285,11 +285,9 @@ article {
 .widget-area section {
   text-align: center;
   margin: auto;
-  padding: 0 1rem;
-
-
-  
+  padding: 0 1rem; 
 }
+
 .content-bottom-widgets {
   width: 15rem;
   display: flex;
